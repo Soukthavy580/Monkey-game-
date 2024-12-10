@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Eats Banana</title>
+    <style>
+        #gameContainer {
+            text-align: center;
+        }
+
+        #gameBoard {
+            border: 3px solid black;
+            display: block;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        #scoreText {
+            font-family: "Permanent Marker", cursive;
+            font-size: 50px;
+            color: black;
+        }
+
+        #timerText {
+            font-family: "Permanent Marker", cursive;
+            font-size: 30px;
+            color: black;
+        }
+
+        #resetBtn {
+            font-family: "Permanent Marker", cursive;
+            font-size: 22px;
+            width: 100px;
+            height: 50px;
+            border: 4px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <div id="scoreText">Score: 0</div>
+        <div id="timerText">Time: 10s</div>
+        <button id="resetBtn">Reset</button>
+        <audio id="gameOverSound" src="gameover.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
